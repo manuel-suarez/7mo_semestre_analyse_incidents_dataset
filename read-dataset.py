@@ -28,3 +28,6 @@ incidents_gm_gdf = incidents_gdf[incidents_gdf.within(bbox)]
 
 # Save filtered data
 print(incidents_gm_gdf)
+
+
+incidents_gm_gdf.to_csv(os.path.join(data_path, "gm_incidents.csv"), index=False)
